@@ -1,0 +1,47 @@
+@import "compass/css3";
+@import "compass/reset";
+@import "vendor/swiper";
+@import "vendor/font";
+
+@import "stylesheets/bootstrap";
+
+@import "vendor/adjusts";
+@import "vendor/variables";
+@import "mixins/clearfix";
+@import "mixins/calc";
+@import "mixins/grid";
+@import "mixins/vertical-align";
+@import "styles/content";
+@import "styles/header";
+@import "styles/footer";
+@import "styles/slider";
+@import "styles/solst";
+@import "styles/blog";
+@import "styles/paginate";
+@import "styles/pontos";
+@import "styles/contato";
+@import "styles/produto";
+
+body{
+	font-family: 'Raleway', 'Open Sans', Verdana;
+	background-color: $white;
+	background {
+		image: image-url('bg-body.png');
+		position:center bottom;
+		repeat: repeat-x;
+	}
+}
+
+::selection{
+	background: $cor-secundaria;
+	color: $white;
+}
+
+object{
+	display:none;
+}
+
+
+
+
+

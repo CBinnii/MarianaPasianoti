@@ -1,0 +1,14 @@
+.sobre {
+    background-color: $white;
+
+    p {
+        font-size: 15px;
+        line-height: 1.7
+    }
+
+    &:after {
+        clear: both;
+        content: "";
+        display: table
+    }
+}

@@ -1,0 +1,49 @@
+.blog-grid {
+	.legenda{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+		padding: 10px 5px;
+		background-color: #370833;
+		color: #f04f6d;
+	}
+	.mostrar{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: none;
+		background: image-url('blog.png') repeat center;
+		background-size: cover;
+	}
+	.detalhes:hover>.mostrar {
+		top: 0;
+		display: block;
+	}
+	.detalhes:hover>.legenda{
+		display: none;
+	}
+	li{
+		padding: 0 5px;
+		@media screen and (max-width:480px){
+			width: 100%;
+		}
+		.blog{
+			position: relative;
+			margin-bottom: 10px;
+		}
+		a{
+			.image{
+				width: 100%;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 297px;
+
+				@media screen and (max-width:480px){
+					height: 195px;
+				}
+			}
+		}
+	}
+}

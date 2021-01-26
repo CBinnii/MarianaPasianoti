@@ -1,0 +1,82 @@
+.servico {
+	padding-bottom: 20px;
+	
+	.card-body {
+		box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+	}
+
+	.nav-tabs {
+		border: none;
+		flex-wrap: nowrap;
+
+		.nav-item {
+			width: 100%;
+			
+			.nav-link {
+				background-color: $secundaria;
+				border-right: 1px solid $white;
+				border-radius: 0;
+				color: $white;
+
+				&.active, &:hover {
+					background-color: $principal;
+					border-color: $principal $white $principal $principal;
+				}
+			}
+
+			&:last-of-type {
+				.nav-link {
+					border-right: none;
+				}
+			}
+		}
+
+		@media screen and (max-width: 535px) {
+			flex-wrap: wrap;
+
+			.nav-item {
+				.nav-link {
+					border-right: none;
+					border-bottom: 1px solid $white;
+					color: $white;
+
+					&.active, &:hover {
+						background-color: $principal;
+						border-color: $principal;
+					}
+				}
+
+				&:last-of-type {
+					.nav-link {
+						border-bottom: none;
+					}
+				}
+			}
+		}	
+	}
+
+	.tab-content {
+		border: 1px solid $secundaria;
+		padding: 10px 15px;
+		min-height: 200px;
+		position: relative;
+		padding-bottom: 65px;
+
+		p {
+			font-size: 14px;
+			text-align: justify;
+			padding-bottom: 10px;
+			margin: 0;
+		}
+
+		.btn {
+			background-color: $principal;
+			color: $white;
+			padding: 3px 8px;
+			font-size: 14px;
+			box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+			position: absolute;
+			bottom: 20px;
+		}
+	}
+}

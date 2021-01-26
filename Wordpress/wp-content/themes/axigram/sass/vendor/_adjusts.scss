@@ -1,0 +1,38 @@
+.container {
+	@media (min-width: 768px){
+		width: 750px;
+	}
+	@media (min-width: 992px){
+		width: 970px;
+	}
+	@media (min-width: 1200px){
+		width: 1170px;
+	}
+	// @media (min-width: 1701px){
+	// 	width: 1440px;
+	// }
+	@media (min-width: 2500px){
+		width: 1800px;
+		width: 70vw;
+	}
+	@media (min-width: 3500px){
+		width: 2800px;
+		width: 70vw;
+	}
+	@media (min-width: 4500px){
+		width: 3800px;
+		width: 75vw;
+	}
+}
+.adjusting-col{
+	padding: 0 7.5px;
+}
+.padding-adjust{
+	padding: 0.5px;
+}
+.adjusting-row{
+	margin: 0 -7.5px;
+}
+.padding-none{
+	padding: 0;
+}

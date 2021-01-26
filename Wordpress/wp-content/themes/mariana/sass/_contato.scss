@@ -1,0 +1,110 @@
+.contato {
+    .white {
+        background-color: $white;
+    }
+
+    .bg-color {
+        background-color: $secundaria;
+        margin: 0;
+    }
+
+    .mapa {
+        position: relative;
+        padding: 0;
+
+        @media screen and (max-width: 767px) {
+            padding: 30px;
+            padding-bottom: 0px;
+        }
+
+        iframe {
+            width: 100%
+        }
+
+        @media screen and (max-width: 767px) {
+            iframe {
+                height: 250px
+            }
+        }
+    }
+
+    .contact-form {
+        .form {
+            padding: 30px 0;
+
+            &:after {
+                clear: both;
+                content: "";
+                display: table
+            }
+
+            input, textarea {
+                margin: 0;
+                font-size: 14px;
+                background-color: $white;
+                box-shadow: none;
+                height: 50px;
+                padding: 10px 12px;
+                border: none;
+                border-radius: 0;
+                margin-bottom: 15px;
+                font-weight: 700;
+
+                &::-webkit-input-placeholder {
+                    color: #424242
+                }
+
+                &:-moz-placeholder {
+                    color: #424242
+                }
+
+                &::-moz-placeholder {
+                    color: #424242
+                }
+
+                &:-ms-input-placeholder {
+                    color: #424242
+                }
+            }
+
+            p:last-of-type {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+
+                span {
+                    width: 100%;
+                }
+            }
+
+            textarea {
+                height: 200px;
+
+                @media screen and (max-width: 767px) {
+                    height: 120px;
+                }
+            }
+
+            .enviar {
+                background-color: $principal;
+                width: 170px;
+                color: $white;
+            }
+        }
+    }
+}
+
+
+.widget {
+    &.widget_text {
+        list-style: none;
+    }
+
+    .widgettitle {
+        display: none;
+    }
+}
+
+.wpcf7-response-output.wpcf7-mail-sent-ng {
+    background-color: $white;
+}
